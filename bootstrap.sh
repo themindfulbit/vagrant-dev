@@ -24,4 +24,9 @@ echo "vagrant" | chsh -s /bin/zsh
 
 # Post-setup.
 
+# Make Development directory.
+if [ ! -d "~/Development" ]; \
+then \
+  mkdir ~/Development; \
+fi
 
