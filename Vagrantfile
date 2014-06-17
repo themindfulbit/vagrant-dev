@@ -35,7 +35,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # If true, then any SSH connections made will enable agent forwarding.
   # Default value: false
-  # config.ssh.forward_agent = true
+  config.ssh.forward_agent = true
 
   # Share an additional folder to the guest VM. The first argument is
   # the path on the host to the actual folder. The second argument is
@@ -57,4 +57,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #
   config.vm.provision "shell", path: "provision.sh"
   config.vm.provision "shell", path: "bootstrap.sh", privileged: false
+
+  # VM-specific digital ocean config
+  config.vm.provider :digital_ocean do |provider|
+    provider.image = 'Ubuntu 14.04 x64'
+    provider.region = 'San Francisco 1'
+    provider.size = '512MB'
+  end
+
 end
