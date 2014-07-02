@@ -8,7 +8,6 @@ apt-get install -y \
   build-essential \
   libevent-dev \
   libncurses-dev \
-  ruby \
   vim \
   zsh
 
@@ -21,7 +20,4 @@ usermod -aG docker vagrant
 mkdir /opt/tmux
 cd /opt/tmux && curl -L -O http://downloads.sourceforge.net/tmux/tmux-1.9a.tar.gz && tar xzf tmux-1.9a.tar.gz
 cd /opt/tmux/tmux-1.9a && ./configure && make && make install
-
-# Homesick
-gem install homesick
 
