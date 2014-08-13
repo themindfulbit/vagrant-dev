@@ -6,10 +6,15 @@ apt-get install -y \
   git \
   curl \
   build-essential \
+  cmake \
+  python-dev \
   libevent-dev \
   libncurses-dev \
   vim \
-  zsh
+  zsh \
+  php5 \
+  ruby \
+  php5-gd
 
 # Install docker
 apt-get install -y docker.io
