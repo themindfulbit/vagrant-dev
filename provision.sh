@@ -26,3 +26,4 @@ mkdir /opt/tmux
 cd /opt/tmux && curl -L -O http://downloads.sourceforge.net/tmux/tmux-1.9a.tar.gz && tar xzf tmux-1.9a.tar.gz
 cd /opt/tmux/tmux-1.9a && ./configure && make && make install
 
+gem install compass.takitapart.framework
