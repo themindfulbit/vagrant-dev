@@ -14,6 +14,7 @@ apt-get install -y \
   zsh \
   php5 \
   ruby \
+  ruby-dev \
   php5-gd
 
 # Install docker
